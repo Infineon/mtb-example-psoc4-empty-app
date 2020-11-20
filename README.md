@@ -1,18 +1,33 @@
 # PSoC 4: Empty Application Template
 
-**Alpha Release Content** - Support for PSoC 4 family devices on ModusToolbox is currently in alpha stage. Features may change without notice. Contact [Cypress Support](https://www.cypress.com/support) for additional details.
-
 This is a minimal starter application template for PSoC® 4 devices.
 
 ## Requirements
 
-- [ModusToolbox™ software](https://www.cypress.com/products/modustoolbox-software-environment) v2.1
-- Programming Language: C
-- Associated Parts: [PSoC® 4 S-Series](http://www.cypress.com/PSoC4)
 
-## Supported Kits
+- [ModusToolbox® software](https://www.cypress.com/products/modustoolbox-software-environment) v2.2
+
+  **Note:** This code example version requires ModusToolbox software version 2.2 or later and is not backward compatible with v2.1 or older versions. 
+
+- Board Support Package (BSP) minimum required version: 1.0.0  
+- Programming Language: C 
+- Associated Parts: [PSoC 4000S](https://www.cypress.com/documentation/datasheets/psoc-4-psoc-4000s-family-datasheet-programmable-system-chip-psoc), [PSoC 4100S](https://www.cypress.com/documentation/datasheets/psoc-4-psoc-4100s-family-datasheet-programmable-system-chip-psoc), and [PSoC 4100S Plus](https://www.cypress.com/documentation/datasheets/psoc-4-psoc-4100s-plus-datasheet-programmable-system-chip-psoc)
+
+## Supported Toolchains (make variable 'TOOLCHAIN')
+
+- GNU Arm® Embedded Compiler v9.3.1 (GCC_ARM) - Default value of `TOOLCHAIN`
+- Arm compiler v6.11 (ARM)
+- IAR C/C++ compiler v8.42.2 (IAR)
+
+## Supported Kits (make variable 'TARGET')
 
 - [PSoC 4100S Plus Prototyping Kit](https://www.cypress.com/CY8CKIT-149) (CY8CKIT-149) - Default target
+- [PSoC 4100S CapSense Pioneer Kit](https://www.cypress.com/CY8CKIT-041-41xx) (CY8CKIT-041-41XX)
+- [PSoC 4000S CapSense Prototyping Kit](https://www.cypress.com/documentation/development-kitsboards/cy8ckit-145-40xx-psoc-4000s-capsense-prototyping-kit) (CY8CKIT-145-41XX)
+
+## Hardware Setup
+
+This example uses the board's default configuration. See the kit user guide to ensure that the board is configured correctly.
 
 ## Software Setup
 
@@ -23,13 +38,18 @@ This example requires no additional software or tools.
 | Application Notes                                            |                                                              |
 | :----------------------------------------------------------- | :----------------------------------------------------------- |
 | [AN79953](https://www.cypress.com/AN79953) – Getting Started with PSoC 4 | Describes PSoC 4 devices and how to build your first application with PSoC Creator |
+| **Code Examples**                                            |                                                              |
+| [Using ModusToolbox](https://github.com/cypresssemiconductorco/Code-Examples-for-ModusToolbox-Software) | [Using PSoC Creator](https://www.cypress.com/documentation/code-examples/psoc-345-code-examples) |
 | **Device Documentation**                                     |                                                              |
 | [PSoC 4 Datasheets](https://www.cypress.com/search/all/PSOC%204%20datasheets?sort_by=search_api_relevance&f%5B0%5D=meta_type%3Atechnical_documents) | [PSoC 4 Technical Reference Manuals](https://www.cypress.com/search/all/PSoC%204%20Technical%20Reference%20Manual?sort_by=search_api_relevance&f%5B0%5D=meta_type%3Atechnical_documents) |
-| **Code Examples** | [Using ModusToolbox](https://github.com/cypresssemiconductorco/Code-Examples-for-ModusToolbox-Software) |
 | **Development Kits**                                         | Buy at www.cypress.com                                     |
-| [CY8CKIT-149](https://www.cypress.com/CY8CKIT-149) PSoC® 4100S Plus Prototyping Kit |
+| [CY8CKIT-149](https://www.cypress.com/CY8CKIT-149) PSoC® 4100S Plus Prototyping Kit | [CY8CKIT-145](https://www.cypress.com/CY8CKIT-145) PSoC® 4000S CapSense Prototyping Kit |
+|[CY8CKIT-041-41xx](https://www.cypress.com/CY8CKIT-149) PSoC® 4100S CapSense Pioneer Kit| 
+| **Libraries**                                                 |                                                              |
+| PSoC 4 Peripheral Driver Library (PDL) and docs  | [mtb-pdl-cat2](https://github.com/cypresssemiconductorco/mtb-pdl-cat2) on GitHub |
+| Cypress Hardware Abstraction Layer (HAL) Library and docs     | [mtb-hal-cat2](https://github.com/cypresssemiconductorco/mtb-hal-cat2) on GitHub |
 | **Tools**                                                    |                                                              |
-| [Eclipse IDE for ModusToolbox](https://www.cypress.com/modustoolbox)     | The multi-platform, Eclipse-based Integrated Development Environment (IDE) that supports application configuration and development for PSoC 6 MCU and PSoC 4.       |
+| [Eclipse IDE for ModusToolbox](https://www.cypress.com/modustoolbox)     |  The cross-platform, Eclipse-based IDE for IoT designers that supports application configuration and development targeting converged MCU and wireless systems.             |
 | [PSoC Creator](https://www.cypress.com/products/psoc-creator-integrated-design-environment-ide) | The Cypress IDE for PSoC and FM0+ MCU development.            |
 
 ## Other Resources
@@ -43,6 +63,7 @@ Document Title: *CE230705 - PSoC 4: Empty Application Template*
 | Version | Description of Change |
 | ------- | --------------------- |
 | 1.0.0   | New code example      |
+| 2.0.0   | Major update to support ModusToolbox software v2.2, added support for new kits<br> This version is not backward compatible with ModusToolbox software v2.1  |
 
 ------
 
