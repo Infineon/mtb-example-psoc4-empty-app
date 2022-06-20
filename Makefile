@@ -34,7 +34,8 @@
 # configurations. If TARGET is manually edited, ensure TARGET_<BSP>.mtb with a
 # valid URL exists in the application, run 'make getlibs' to fetch BSP contents
 # and update or regenerate launch configurations for your IDE.
-TARGET=CY8CKIT-041S-MAX
+TARGET=CY8CKIT-040T
+MTB_TYPE=COMBINED
 
 # Name of application (used to derive name of final linked file).
 #
