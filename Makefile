@@ -28,7 +28,7 @@
 # Basic Configuration
 ################################################################################
 
-# Type of ModusToolbox Makefile Options include:
+#Type of MTB Makefile Options include:
 #
 # COMBINED    -- Top Level Makefile usually for single standalone application
 # APPLICATION -- Top Level Makefile usually for multi project application
@@ -38,8 +38,10 @@ MTB_TYPE=COMBINED
 # Target board/hardware (BSP).
 # To change the target, it is recommended to use the Library manager
 # ('make library-manager' from command line), which will also update Eclipse IDE launch
-# configurations. 
-TARGET=CY8CKIT-040T
+# configurations. If TARGET is manually edited, ensure TARGET_<BSP>.mtb with a
+# valid URL exists in the application, run 'make getlibs' to fetch BSP contents
+# and update or regenerate launch configurations for your IDE.
+TARGET=CY8CKIT-041S-MAX
 
 
 # Name of application (used to derive name of final linked file).
@@ -169,7 +171,7 @@ CY_GETLIBS_SHARED_NAME=mtb_shared
 CY_COMPILER_PATH=
 
 
-# Locate ModusToolbox helper tools folders in default installation
+# Locate ModusToolbox software helper tools folders in default installation
 # locations for Windows, Linux, and macOS.
 CY_WIN_HOME=$(subst \,/,$(USERPROFILE))
 CY_TOOLS_PATHS ?= $(wildcard \
